@@ -5,33 +5,13 @@ let score=JSON.parse(localStorage.getItem('score')) || {
             };
 
            updatescoreelement();
-          
-
-            // if(!score){
-            //  score={
-            //   wins:0,
-            //   losses:0,
-            //   ties:0
-            //  };
-            // }
-
-        
-        // wins:0,
-        // losses:0,
-        // ties:0
-      //};
-      // console.log(JSON.parse(localstorage.getitme('score')));
-
 
       let isautoplaying=false;
       let intervalid;
 
-      // const autoplay=()=>{
-
-      // };
       function toggleautoplay(){
         if(!isautoplaying){
-          intervalid=setInterval(()=>{     //arrow function
+          intervalid=setInterval(()=>{  
           const playerMove=pickComputerMove();
           playGame(playerMove);  
           },1000);
@@ -116,8 +96,8 @@ let score=JSON.parse(localStorage.getItem('score')) || {
         document.querySelector('.js-result').innerHTML=result;
 
         document.querySelector('.js-moves').innerHTML=  ` You
-          <img src="images/${playerMove}-emoji.png" class="move-icon">
-          <img src="images/${computerMove}-emoji.png" class="move-icon">
+          <img src="${playerMove}-emoji.png" class="move-icon">
+          <img src="${computerMove}-emoji.png" class="move-icon">
           Computer`;
       }
 

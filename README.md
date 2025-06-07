@@ -5,7 +5,7 @@ A simple Rock-Paper-Scissors game built using HTML, CSS, and JavaScript. Play ag
 ## 🔗 Live Demo
 [Click here to play!](https://anisha-mahto.github.io/Rock_Paper_Scissor/) 
 
-![Game Screenshot](screenshot.png)
+![Game Screenshot](Screenshot.png)
 
 ## 🚀 Features
 - Interactive UI
